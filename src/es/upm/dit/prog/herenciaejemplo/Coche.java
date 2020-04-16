@@ -23,10 +23,10 @@ public class Coche extends Vehiculo {
 	// Se sombrea el método (se sobreescribe) ya que el método de la clase madre
 	// (Vehículo) no comprueba el número máximo de marchas
 	@Override
-	public void cambiarMarcha(int newGear) throws Exception {
-		if (newGear > this.numeroTotalMarchas || newGear <= 0)
+	public void cambiarMarcha(int nuevaMarcha) throws Exception {
+		if (nuevaMarcha > this.numeroTotalMarchas || nuevaMarcha <= 0)
 			throw new Exception("Número de marcha no permitido");
-		this.marcha = newGear;
+		this.marcha = nuevaMarcha;
 	}
 
 	// Se sombrea el método porque mostramos más información que la clase madre

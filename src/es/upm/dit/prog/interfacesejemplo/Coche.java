@@ -22,24 +22,24 @@ public class Coche implements Vehiculo {
 
 	// cambio de marcha
 	@Override
-	public void cambiarMarcha(int newGear) throws Exception {
-		if (newGear > this.numeroTotalMarchas || newGear <= 0)
+	public void cambiarMarcha(int nuevaMarcha) throws Exception {
+		if (nuevaMarcha > this.numeroTotalMarchas || nuevaMarcha <= 0)
 			throw new Exception("Número de marcha no permitido");
-		marcha = newGear;
+		marcha = nuevaMarcha;
 	}
 
 	// aumenta velocidad
 	@Override
-	public void acelerar(int increment) {
+	public void acelerar(int incremento) {
 
-		velocidad = velocidad + increment;
+		velocidad = velocidad + incremento;
 	}
 
 	// reduce velocidad
 	@Override
-	public void frenar(int decrement) {
+	public void frenar(int decremento) {
 
-		velocidad = velocidad - decrement;
+		velocidad = velocidad - decremento;
 	}
 
 	// muestra el estado

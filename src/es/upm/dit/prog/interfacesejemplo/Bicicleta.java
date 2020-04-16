@@ -13,22 +13,22 @@ public class Bicicleta implements Vehiculo {
 
 	// cambio de marcha
 	@Override
-	public void cambiarMarcha(int newGear) {
-		marcha = newGear;
+	public void cambiarMarcha(int nuevaMarcha) {
+		marcha = nuevaMarcha;
 	}
 
 	// aumenta velocidad
 	@Override
-	public void acelerar(int increment) {
+	public void acelerar(int incremento) {
 
-		velocidad = velocidad + increment;
+		velocidad = velocidad + incremento;
 	}
 
 	// reduce velocidad
 	@Override
-	public void frenar(int decrement) {
+	public void frenar(int decremento) {
 
-		velocidad = velocidad - decrement;
+		velocidad = velocidad - decremento;
 	}
 
 	// imprime el estado

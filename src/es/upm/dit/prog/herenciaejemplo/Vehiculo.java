@@ -12,20 +12,20 @@ public class Vehiculo {
 	}
 
 	// cambio de marcha
-	public void cambiarMarcha(int newGear) throws Exception {
-		marcha = newGear;
+	public void cambiarMarcha(int nuevaMarcha) throws Exception {
+		marcha = nuevaMarcha;
 	}
 
 	// aumenta velocidad
-	public void acelerar(int increment) {
+	public void acelerar(int incremento) {
 
-		velocidad = velocidad + increment;
+		velocidad = velocidad + incremento;
 	}
 
 	// reduce velocidad
-	public void frenar(int decrement) {
+	public void frenar(int decremento) {
 
-		velocidad = velocidad - decrement;
+		velocidad = velocidad - decremento;
 	}
 
 	// imprime el estado
