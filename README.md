@@ -1,6 +1,6 @@
-# Ejemplos sobre Interfaces y Herencia
+# Ejemplo sobre Herencia
 ---
-El presente código pretende resolver un mismo problema usando dos técnicas distintas en programación orientada a objetos: los interfaces y la herencia.
+El presente código pretende resolver un problema usando la herencia (o extensión).
 ### Problema a resolver.
 Necesitamos tres clases: Moto, Coche y Bicicleta. Estas clases representan objetos del mundo real pero cada uno de ellos tiene sus peculiaridades.
 Los tres deben permitir guardar su nombre, su velocidad y la marcha. Para ello deben tener los siguientes métodos:
@@ -22,12 +22,13 @@ La clase Coche debe tener los siguientes métodos:
 | ------------- |-------------|
 | Constructor específico      | Donde además del nombre recibe el número máximo de marchas. |
 
-## Lo resolveremos con dos proyectos usando: Interfaces y herencia.
 
+<!--- 
 ### Usando interfaces.
 En el paquete *es.upm.dit.prog.interfacesejemplo* tenemos la solución usando interfaces.
 A continuación, hacemos una breve descripción de cada clase.
-
+--->
+<!--- 
 | Clases e interfaces        | Explicación  |
 | ------------- |-------------|
 | Interface "Vehiculo"      | Interface con los métodos que deben implementar, Bicicleta, Moto y Coche |
@@ -35,9 +36,9 @@ A continuación, hacemos una breve descripción de cada clase.
 | Clase "Bicicleta"      | Clase que implementa la interface "Vehiculo", con un constructor |
 | Clase "Moto"      | Clase que implementa la interface "Vehiculo", con un constructor y métodos propios "hacerCaballito" y "dejarHacerCaballito" |
 | Clase "PruebaVehiculo"      | Clase con método main para hacer las pruebas del código. |
+--->
 
-
-### Usando herencia (o extensión).
+### Resolviendo el problema usando herencia (o extensión).
 En el paquete *es.upm.dit.prog.herenciaejemplo* tenemos la solución usando herencia (o extensión).
 A continuación, hacemos una breve descripción de cada clase.
 
@@ -48,6 +49,3 @@ A continuación, hacemos una breve descripción de cada clase.
 | Clase "Bicicleta"      | Clase que hereda (o extiende) de la clase "Vehiculo", con un solo constructores |
 | Clase "Moto"      | Clase que hereda (o extiende) de la clase "Vehiculo", con un constructor y métodos propios "hacerCaballito" y "dejarHacerCaballito" |
 | Clase "PruebaVehiculo"      | Clase con método main para hacer las pruebas del código. |
-
-
-## Pregunta: ¿Qué solución es la mejor?
